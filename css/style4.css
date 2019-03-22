@@ -1,0 +1,348 @@
+/*font-family: 'Sniglet', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Marmelad', sans-serif;
+font-family: 'M PLUS 1p', sans-serif;card title
+font-family: 'Sanchez', serif; card description*/
+* {
+    box-sizing: border-box;
+  }
+body,html, #showcase{
+    height: 100%;
+    margin: 0;
+}
+.topnav{
+    width: 100%;
+    background: rgba(8, 84, 126, 0.8);
+    top:0;
+    position: fixed;
+    z-index: 200;
+}
+.topnav a{
+    text-decoration: none;
+    font-family: 'Sniglet', cursive;
+    font-size: 20px;
+    padding: 20px 20px;
+    display: inline-block;/*add to get height*/
+    color: #e7e7e7;
+}
+.topnav a:hover{
+    background: rgba(0, 0, 0, 0.6);
+    
+}
+.showcase-text{
+    position: absolute;
+    margin-left: 15%;  
+    margin-right: auto;
+    margin-top: 5%;
+    width: 70%;
+    background:  rgba(8, 84, 126, 0.5);
+    color: white;
+    border-radius: 5px;
+}
+#fav-food{
+    font-family: 'Marmelad', sans-serif;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+#welcome{
+    margin: 0;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+.wrapper-showcase{
+    background: url('/img/board1.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.showcase-text button{
+    margin-top: 0px;
+    border: 2px,,solid,#fff;
+    border-radius:5px;
+    padding:14px 28px;
+    background:transparent;
+    color:white;
+    font-size:25px;
+}
+.showcase-text button:hover{
+    background: rgba(8, 84, 126, 0.8);
+}
+.showcase-footer{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;  
+}
+#top-5 {
+    background-color: #053853;
+    width: 100%;
+    margin: 0;
+    background-position: center;
+}
+.top-5-wrapper{
+    background: url("/img/cooking.jpg");
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+#drinks{
+    background: url("/img/drinks.jpg");
+    background-position: center;
+    width: 100%;
+    margin: 0;
+
+}
+
+.title{
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    font-size: 40px;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 50px;
+    
+    
+}
+.title h1{
+    margin:  0;
+    background: #053853;
+    border-radius: 8px;
+    border-bottom: 3px white solid;
+
+}
+
+
+.card-wrapper{
+    box-sizing: border-box;
+    width: 100%;
+    width: auto;
+    text-align: center;
+    padding-bottom: 80px;
+}
+.card{
+    position: relative;
+    width: 30%;
+    background: #053853;
+    margin-top: 20px;
+    margin-left: 2%;
+    display: inline-block;
+}
+.card-header{
+    width: 100%;
+    color: #e7e7e7;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.card-header h1{
+    margin: 0;
+    font-family: 'Marmelad', sans-serif;
+}
+.card-body{
+    width: 100%;
+    font-family: 'Sniglet', cursive;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    
+}
+.card-body span{
+    height: 150px;
+}
+.card-body img{
+    width: 100%;
+    max-height: 250px;
+    overflow: hidden;
+}
+.card:hover .card-overlay{
+    opacity: 1;
+}
+
+.card-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s ease;
+}
+.overlay-on{
+    opacity: 1;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.drink-title{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.card-drink{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background: rgba(198,218,231,0.95) ;
+    color: #080211;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 8px 8px 20px rgba(58, 69, 104, 0.5);
+    font-family: 'Sanchez', serif;
+    max-height: 300px;
+    max-width: 800px;
+}
+.card-drink .header{
+    width: 100%;
+}
+.card-drink img{
+    width: 30%;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    display: inline-block;
+}
+.card-drink-content{
+    margin-left: 20px;
+    width:65%;
+    display: inline-block;
+    padding-top: 10px;
+    position: absolute;
+    
+}
+.card-drink-content h3{
+    text-align: center;
+    margin-top: 0;
+}
+.card-drink-content p{
+    text-align: justify;
+}
+.more{
+    width: 100%;
+    text-align: right;
+}
+.more button{
+    background: transparent;
+    border: 2px #053853 solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+
+}
+.more button:hover {
+    background: #053853;
+    color: white;
+}
+#contactus{
+    background: url("/img/contactus.jpg");
+    width: 100%;
+    height: 100%;
+    
+}
+.contact-legend{
+    width:40%;
+    background: rgba(198,218,231,0.8);
+    display: inline-block;
+    position: absolute;
+    min-height: 515.625px;
+    margin-left:5%;
+}
+.contact-legend-title {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #053853;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.contact-legend-content{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #053853;
+    font-family: 'Sanchez', serif;
+}
+.form-wrapper{
+    width:40%;
+    background: rgba(198,218,231,0.8);
+    display: inline-block;
+    position: absolute;
+    margin-left: 55%;
+}
+
+.form-wrapper legend{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #053853;
+    padding-top: 20px;
+}
+.form-wrapper hr{
+    background-image: url("/img/hr.png");
+    background-size: 80%;
+    border: none;
+    background-repeat: no-repeat;
+    height: 50px;
+    background-position: 50%;
+
+}
+.form-container{
+    width: 100%;
+    
+}
+.form-label{
+    width: 35%;
+    padding: 4%;
+    display: inline-block;
+    font-family: 'Marmelad', sans-serif;
+    font-size: 25px;
+}
+
+.form-input{
+    width: 60%;
+    display: inline-block;
+}
+.form-input input{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+.btn{
+    width: 80%;
+    margin-left: 10%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 30px;
+    margin-top: 20px;
+    background: #053853;
+    color: #e7e7e7;
+}
+/*Mobile CSS Starts here*/
+/*Small screen devices*/
+@media all and (max-width: 575px) {
+    .showcase-text{
+        
+          
+        
+        margin-top: 35%;
+
+
+    }
+}
+
+
